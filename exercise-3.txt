@@ -22,3 +22,18 @@ mysql> SELECT * FROM Entry;
 |  1 |             1 | Nora      | TOP      | 1984-03-28 00:00:00 | work | address |                | NULL           | NULL             | NULL            | NULL            |
 +----+---------------+-----------+----------+---------------------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
 1 row in set (0.00 sec)
+
+===============
+
+
+mysql> SELECT * FROM Entry;
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+| id | addressBookId | firstName | lastName | birthday | type | subtype | contentLineOne | contentLineTwo | contentLineThree | contentLineFour | contentLineFive |
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+|  1 |             0 |           | NULL     | NULL     | work |         |                | NULL           | NULL             | NULL            | NULL            |
+|  3 |             1 | ziad      | saab     | NULL     | work | phone   |                | NULL           | NULL             | NULL            | NULL            |
+|  4 |             1 | nora      | top      | NULL     | work | phone   |                | NULL           | NULL             | NULL            | NULL            |
+|  5 |             1 | paule     | lepage   | NULL     | work | phone   |                | NULL           | NULL             | NULL            | NULL            |
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+4 rows in set (0.00 sec)
+
