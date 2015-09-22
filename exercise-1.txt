@@ -50,3 +50,41 @@ mysql> SHOW TABLES;
 | Entry                                  |
 +----------------------------------------+
 3 rows in set (0.00 sec)
+
+=========================================================================
+
+% mysqldump decodemtl_addressbook_import > data/addressbook_backup.sql
+
+mysql> CREATE DATABASE decodemtl_addressbook;
+Query OK, 1 row affected (0.00 sec)
+
+% mysql -unoratop  decodemtl_addressbook < data/addressbook_backup.sql   
+
+mysql> SHOW DATABASES;
++------------------------------+
+| Database                     |
++------------------------------+
+| information_schema           |
+| c9                           |
+| decodemtl_addressbook        |
+| decodemtl_addressbook_import |
+| mysql                        |
+| performance_schema           |
++------------------------------+
+6 rows in set (0.00 sec)
+
+mysql> DROP DATABASE decodemtl_addressbook_import
+    -> ;
+Query OK, 3 rows affected (0.01 sec)
+
+mysql> SHOW DATABASES;
++-----------------------+
+| Database              |
++-----------------------+
+| information_schema    |
+| c9                    |
+| decodemtl_addressbook |
+| mysql                 |
+| performance_schema    |
++-----------------------+
+5 rows in set (0.00 sec)
