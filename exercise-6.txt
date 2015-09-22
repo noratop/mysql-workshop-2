@@ -1,0 +1,5 @@
+mysql> TRUNCATE Account;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> SELECT * FROM Account;
+Empty set (0.00 sec)
