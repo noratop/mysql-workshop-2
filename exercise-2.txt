@@ -6,3 +6,29 @@ Query OK, 1 row affected (0.01 sec)
 
 mysql> INSERT INTO Entry (addressBookId,firstName,lastName,birthday,type,subtype) VALUES (1,"Nora","TOP",'1984-03-28','work','address');
 Query OK, 1 row affected, 1 warning (0.00 sec)
+
+
+=====================
+
+mysql> INSERT INTO Entry (addressBookId,firstName,lastName) VALUES (1,'ziad','saab');
+Query OK, 1 row affected, 1 warning (0.01 sec)
+
+mysql> INSERT INTO Entry (addressBookId,firstName,lastName) VALUES (1,'nora','top');
+Query OK, 1 row affected, 1 warning (0.01 sec)
+
+mysql> INSERT INTO Entry (addressBookId,firstName,lastName) VALUES (1,'paule','lepage');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> SELECT * FROM Entry;
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+| id | addressBookId | firstName | lastName | birthday | type | subtype | contentLineOne | contentLineTwo | contentLineThree | contentLineFour | contentLineFive |
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+|  1 |             0 |           | NULL     | NULL     |      |         |                | NULL           | NULL             | NULL            | NULL            |
+|  3 |             1 | ziad      | saab     | NULL     | home | phone   |                | NULL           | NULL             | NULL            | NULL            |
+|  4 |             1 | nora      | top      | NULL     | home | phone   |                | NULL           | NULL             | NULL            | NULL            |
+|  5 |             1 | paule     | lepage   | NULL     | home | phone   |                | NULL           | NULL             | NULL            | NULL            |
++----+---------------+-----------+----------+----------+------+---------+----------------+----------------+------------------+-----------------+-----------------+
+4 rows in set (0.00 sec)
+
+=====================
+
