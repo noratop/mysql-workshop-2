@@ -1,0 +1,23 @@
+mysql> SELECT COUNT(*) FROM Account;
++----------+
+| COUNT(*) |
++----------+
+|     1000 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(*) FROM AddressBook;
++----------+
+| COUNT(*) |
++----------+
+|     1100 |
++----------+
+1 row in set (0.01 sec)
+
+mysql> SELECT COUNT(*) FROM Entry;
++----------+
+| COUNT(*) |
++----------+
+|     8000 |
++----------+
+1 row in set (0.01 sec)
