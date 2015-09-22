@@ -1,0 +1,8 @@
+mysql> INSERT INTO Account (email,password,createdOn,modifiedOn) VALUES ('top.nora@gmail.com','123',CURDATE(),CURDATE());
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO AddressBook (accountId,name,createdOn,modifiedOn) VALUES ("2","myAddressBook",CURDATE(),CURDATE());
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Entry (addressBookId,firstName,lastName,birthday,type,subtype) VALUES (1,"Nora","TOP",'1984-03-28','work','address');
+Query OK, 1 row affected, 1 warning (0.00 sec)
